@@ -1,0 +1,36 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="368dp"
+    android:layout_height="495dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp"
+    >
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建悬浮窗"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        />
+    <Button
+        android:id="@+id/destroy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="销毁悬浮窗"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+</LinearLayout>
