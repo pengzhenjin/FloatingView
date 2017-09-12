@@ -10,10 +10,13 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private String TAG = "MainActivity";
 
     private Button mCreateBtn;
     private Button mDestroyBtn;
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void showFloatingView(Context context) {
+        Log.i(TAG, "手机系统版本：" + Build.VERSION.SDK_INT);
         // API22以下直接启动
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP_MR1) {
             context.startService(new Intent(context, FloatingViewService.class));
